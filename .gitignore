@@ -1,0 +1,6 @@
+.DS_STORE
+.Python
+.git/
+.idea/
+__pycache__/
+
