@@ -13,6 +13,7 @@ def find_order(words):
     seen = set()
 
     for w1, w2 in zip(words,words[1:]):
+        print(w1,w2)
         for c1, c2 in zip(w1,w2):
             if c1!=c2:
                 deps[c1].add(c2)
@@ -55,7 +56,8 @@ def find_order(words):
     return ''.join(reversed(order))
 
 
+words = ['baa', 'abcd', 'abca', 'cab','cad']
 
 #words = ['c', 'aaaa', 'aaaa', 'aabc']
-words = ['wrt','wrf','er','ett','rftt']
+#words = ['wrt','wrf','er','ett','rftt']
 print(find_order(words))

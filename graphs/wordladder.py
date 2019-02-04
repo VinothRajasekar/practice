@@ -29,7 +29,7 @@ class Solution(object):
                     for next_word in matrix[s]:
                         if next_word not in mark:
                             if next_word == endWord:
-                                return mark
+                                return dist + 1
                             mark.add(next_word)
                             next_queue.append(next_word)
             queue = next_queue
