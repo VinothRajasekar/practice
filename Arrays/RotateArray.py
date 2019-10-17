@@ -1,4 +1,5 @@
 def rotatearray(arr, n):
+    print(arr[n+1::])
     return arr[n+1::] + arr[0:n+1]
 
 
